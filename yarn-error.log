@@ -1,0 +1,89 @@
+Arguments: 
+  /usr/local/bin/node /usr/bin/yarn add url:
+
+PATH: 
+  /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/mnt/d/Playing/c-130/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_1804.2020.5.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Users/steblaj/.windows-build-tools/python27/:/mnt/c/Users/steblaj/AppData/Roaming/npm/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/mnt/c/Users/steblaj/AppData/Roaming/npm/node_modules/windows-build-tools/node_modules/.bin:/mnt/c/Users/steblaj/AppData/Roaming/npm/node_modules/.bin:/mnt/c/Users/steblaj/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/steblaj/AppData/Roaming/npm:/mnt/c/Users/steblaj/AppData/Local/Android/Sdk/platform-tools/adb.exe:/mnt/c/Users/steblaj/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/steblaj/AppData/Local/Yarn/bin:/mnt/c/Users/steblaj/AppData/Local/Microsoft/WindowsApps:/snap/bin
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  10.15.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: Invalid URL
+      at module.exports.module.exports (/usr/lib/node_modules/yarn/lib/cli.js:117688:9)
+      at urlParts (/usr/lib/node_modules/yarn/lib/cli.js:29901:75)
+      at NpmRegistry.isRequestToRegistry (/usr/lib/node_modules/yarn/lib/cli.js:29940:19)
+      at NpmRegistry.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:29972:31)
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:110:14
+      at new Promise (<anonymous>)
+      at new F (/usr/lib/node_modules/yarn/lib/cli.js:4434:28)
+      at NpmRegistry.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:89:12)
+
+npm manifest: 
+  {
+    "name": "parcel-starter",
+    "version": "1.0.0",
+    "description": "A simple boilerplate parcel project. (Ready to be deployed with ▲ ZEIT Now!)",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "npm run dev",
+      "dev": "parcel src/index.html --out-dir public",
+      "build": "parcel build src/index.html --out-dir public",
+      "deploy": "now"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ivoilic/parcel-starter.git"
+    },
+    "keywords": [
+      "starter",
+      "boilerplate",
+      "zeit",
+      "now",
+      "parcel",
+      "package",
+      "sass"
+    ],
+    "author": "Ivo Ilic <admin@ivoilic.com> (https://ivoilic.com)",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/ivoilic/parcel-starter/issues"
+    },
+    "homepage": "https://github.com/ivoilic/parcel-starter#readme",
+    "devDependencies": {
+      "eslint": "^6.1.0",
+      "eslint-config-airbnb": "^18.0.1",
+      "eslint-config-prettier": "^6.3.0",
+      "eslint-plugin-import": "^2.18.2",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-prettier": "^3.1.1",
+      "eslint-plugin-react": "^7.14.3",
+      "eslint-plugin-react-hooks": "^1.7.0",
+      "normalize.css": "^8.0.1",
+      "parcel-bundler": "^1.12.3",
+      "prettier": "^1.18.2",
+      "sass": "^1.22.12"
+    },
+    "dependencies": {
+      "d3-delaunay": "^5.2.1",
+      "dat.gui": "^0.7.7",
+      "delaunator": "^4.0.1",
+      "perlin-noise": "0.0.1",
+      "perlin-simplex": "0.0.3",
+      "three": "^0.115.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

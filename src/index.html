@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<style>
+    .hud {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+    }
+    .zombies-score {
+        display: inline-block;
+        text-align: center;
+    }
+</style>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>parcel-starter</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./styles/index.scss" />
+    <script src="./index.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+  </head>
+  <body style="position: relative">
+    <div class="hud">
+        <div class="zombies-score alive"></div>
+        <div class="zombies-score score"></div>
+    </div>
+    <div id="WebGL-output" style=""></div>
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <canvas id="pathCanvas" width="200" height="200"></canvas>
+  </body>
+</html>

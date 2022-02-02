@@ -1,0 +1,19 @@
+- generate bunker entrance
+- generate zombies, define paths for each or one wide path, with multiple random displacement points
+  - defined zombie random Z generation - done, zombie class
+  - defined one straigth path toward endpoint, create path in segments, use lineCurve3 to account for Y changes
+    due to different height points - DONE
+    - use pathfinder.js for getting array indices for path, and get heightmaps values for said indices - DONE
+      - create an array of path elements in the constructor, loop through them - DONE
+- shoot zombies, create new one on kill - done
+- generate regions for houses and nature, on voronoi cells (one "central" cell, and 7-8 "outside" cells) - done
+- divide central cell in regions, for specific buildings (small farm or small village, for example) - done
+- generate roads using spline extrusions, make them connect at right angles if more roads are present
+- generate crop fields using into consideration the y displacement of land triangles
+- texture different triangles depending on slope, higher angles should look like rock ridges
+- generate house on game map, check for trees first
+
+bugs:
+ - y os zombija i dalje nije ok, prolazi kroz teren - isto kao drva
+ - y os stabla nije ok, stabla koja su na padini su preduboko - prestrmi mi je teren, ako sam ispod 0.017
+    ispada još i ok
